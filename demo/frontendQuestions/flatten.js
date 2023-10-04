@@ -1,4 +1,4 @@
-// basic approch//
+// basic approach//
 function flattern(val) {
   let res = [];
   let copy = val.slice();
