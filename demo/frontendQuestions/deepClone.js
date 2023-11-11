@@ -18,3 +18,14 @@ function deepClone(obj) {
   }
   return newObj;
 }
+
+
+const originalObject = {
+    a: 1,
+    b: [2, 3, { c: 4 }],
+    d: { e: 5 }
+  };
+  
+  const clonedObject = deepClone(originalObject);
+  
+  console.log(clonedObject)
