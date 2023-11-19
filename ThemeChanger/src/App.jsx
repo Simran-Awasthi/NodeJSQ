@@ -17,7 +17,7 @@ const App = () => {
   // actual change in theme
 
   useEffect(() => {
-    // document.querySelector("html").classList.remove("light", "dark");
+    document.querySelector("html").classList.remove("light", "dark");
     document.querySelector("html").classList.add(theme);
   }, [theme]);
   return (
@@ -27,20 +27,9 @@ const App = () => {
           <div className="w-full max-w-sm mx-auto flex justify-end mb-4">
             <ThemeBtn />
           </div>
+
           <div className="w-full max-w-sm mx-auto">
-            <div className="flex flex-col gap-2 p-4">
-              {[1, 2, 3, 4].map((e) => {
-                return (
-                  <Card
-                    key={e}
-                    text="This is my tweet"
-                    username="simran Awasthi"
-                    handle="Simran"
-                    verified={true}
-                  />
-                );
-              })}
-            </div>
+            <Card />
           </div>
         </div>
       </div>
